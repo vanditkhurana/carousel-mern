@@ -40,7 +40,6 @@ const updateImage = async (req, res) => {
       return res.status(404).json({ message: 'Image not found' });
     }
     const currentOrder = imageToUpdate.order;
-e
     imageToUpdate.order = newOrder;
     await imageToUpdate.save();
     const imagesToUpdate = await Image.find({ _id: { $ne: id } }).sort('order');
