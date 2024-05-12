@@ -1,6 +1,7 @@
 # Carousel
 
 Carousel App with the functionality to add image, manually move to next or previous image, delete image, update time interval of carousel and update the order of images in carousel.
+
 ## Installation
 
 Clone the repo and install the dependencies.
@@ -31,7 +32,7 @@ Tech Used - React
 
 ## Backend APIs
 
-### 1. To add image data object in DB
+### 1. To fetch all the image's objects from DB
 #### Request
 
 `GET /api/images`
@@ -83,7 +84,7 @@ Request Body :
   Sends the new order of images object as response
   ```
 
-### 4. To delete the image object
+### 4. To delete the image object in DB
 #### Request
 
 `DELETE /api/images/:id`
